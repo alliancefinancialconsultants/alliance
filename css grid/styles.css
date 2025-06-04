@@ -1,0 +1,21 @@
+* {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.card {
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto, 300px);
+  gap: 15px;
+}
+.card {
+  border: 1px solid red;
+  border-radius: 10px;
+}
