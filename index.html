@@ -4,303 +4,131 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alliance Financial Consultants</title>
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Link to your CSS file -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .navbar {
+        display: flex;
+        background-color: #d10202;
+        height: 60px;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+      .home-link {
+        margin-right: auto;
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.5rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+      .home-link:hover {
+        background-color: black;
+        color: white;
+      }
+      .container {
+        display: flex;
+        height: 100%;
+        align-items: center;
+      }
+      .links {
+        color: black;
+        display: flex;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 1.2rem;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 100%;
+        align-items: center;
+      }
+      .links:hover {
+        background-color: #000000;
+        color: white;
+      }
+      section {
+        padding: 20px;
+        height: calc(100vh - 60px);
+        display: flex;
+      }
+      .about-us {
+        display: flex;
+        flex-direction: column;
+        margin: auto auto;
+        
+        max-width: 800px;
+        padding: 20px;
+      }
+      .about-us h1 {
+        color: #d10202;
+        text-align: center;
+        
+      }
+      .about-us p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        color: #333;
+        text-align: justify;
+      }
+      .action-button {
+        padding: 10px;
+        background-color: #d10202;
+        color: white;
+        width: 150px;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 10px;
+        display: flex;
+        margin: auto auto;
+        justify-content: center;
+      }
+      .action-button:hover {
+        background-color: #a50505;
+        color: black;
+      }
+  
+    </style>
   </head>
-  <body class="main">
-    <!-- Header Section -->
-    <header>
-      <nav>
-        <img src="alliance2.JPG" class="logo" />
-      </nav>
-    </header>
-
-    <!-- About Us Section -->
-    <section id="about" class="section1">
-      <h2>About Us</h2>
-      <div class="about-section">
-        <div class="card">
-          <p>
-            At Alliance Financial Consultants, we are a forward-thinking
-            accounting and audit firm established in 2019 with a clear mission:
-            to deliver exceptional financial solutions through the power of
-            technology. Since our inception, we have been committed to helping
-            businesses and individuals make smarter financial decisions by
-            offering reliable, efficient, and tech-driven accounting, auditing,
-            and advisory services.
-          </p>
-        </div>
-        <div class="card">
-          <p>
-            Our team combines deep industry expertise with modern tools to
-            ensure accuracy, compliance, and insight for every client. Whether
-            it's navigating complex audits, streamlining financial reporting, or
-            offering strategic business advice, we tailor our services to meet
-            the unique needs of each client.
-          </p>
-        </div>
-        <div class="card">
-          <p>
-            At Alliance Financial Consultants, we believe that success is built
-            on trust, integrity, and results—and we are dedicated to partnering
-            with you every step of the way
-          </p>
-        </div>
+  <body>
+    <nav class="navbar">
+      <a href="#home" class="home-link">Home</a>
+      <div class="container">
+        
+        <a href="testimonials.html" class="links">Testimonials</a>
+        <a href="services.html" class="links">Our Services</a>
+        <a href="why-choose-us.html" class="links">Why Choose Us</a>
+        <a href="contacts.html" class="links">Contact Us</a>
+      </div>
+    </nav>
+    <section>
+      <div class="about-us">
+        <h1>Welcome to Alliance Financial Consultants</h1>
+        <p>
+          At Alliance Financial Consultants, we are a forward-thinking
+          accounting and audit firm established in 2019 with a clear mission: to
+          deliver exceptional financial solutions through the power of
+          technology. Since our inception, we have been committed to helping
+          businesses and individuals make smarter financial decisions by
+          offering reliable, efficient, and tech-driven accounting, auditing,
+          and advisory services. Our team combines deep industry expertise with
+          modern tools to ensure accuracy, compliance, and insight for every
+          client. Whether it's navigating complex audits, streamlining financial
+          reporting, or offering strategic business advice, we tailor our
+          services to meet the unique needs of each client. At Alliance
+          Financial Consultants, we believe that success is built on trust,
+          integrity, and results—and we are dedicated to partnering with you
+          every step of the way.
+        </p>
+        <a href="contacts.html" class="action-button"><h2 >Contact us</h1></a>
       </div>
     </section>
-
-    <!-- Our Services Section -->
-    <section id="services" class="section2">
-      <h2>Our Services</h2>
-      <p
-        style="
-          display: flex;
-          padding: 20px;
-          margin: 20px;
-          background-color: rgba(255, 255, 255, 0.8);
-          border-radius: 20px;
-        "
-      >
-        At Alliance Financial Consultants, we provide a comprehensive range of
-        financial services designed to support businesses of all sizes in
-        achieving compliance, efficiency, and sustainable growth. Our team
-        leverages industry expertise and innovative technology to deliver
-        accurate, timely, and value-driven solutions across the following areas:
-      </p>
-      <div class="services-section">
-        <div class="card">
-          <h4>Taxation Services</h4>
-          <p>
-            We provide end-to-end tax compliance and advisory services, helping
-            you navigate complex tax regulations, optimize your tax position,
-            and meet all statutory obligations. Our services include tax
-            planning, filing, audits, and representation.
-          </p>
-        </div>
-        <div class="card">
-          <h4>Business Advisory</h4>
-          <p>
-            Our advisory team works closely with clients to provide strategic
-            guidance on financial planning, business structuring, growth
-            strategies, and risk management. We help you make informed decisions
-            that drive profitability and long-term success.
-          </p>
-        </div>
-        <div class="card">
-          <h4>Audit and Assurance</h4>
-          <p>
-            We offer independent and objective audit services that enhance the
-            credibility of your financial statements. Our audits are designed to
-            meet regulatory standards while providing insights to improve
-            internal controls and business processes.
-          </p>
-        </div>
-        <div class="card">
-          <h4>Bookkeeping and Accounting</h4>
-          <p>
-            Accurate financial records are the backbone of any successful
-            business. We offer comprehensive bookkeeping and accounting services
-            that ensure your records are up-to-date, compliant, and ready for
-            informed decision-making.
-          </p>
-        </div>
-        <div class="card">
-          <h4>Payroll Services</h4>
-          <p>
-            We manage the complexities of payroll processing, ensuring accurate
-            salary computations, statutory deductions, and timely remittances,
-            so you can focus on growing your business.
-          </p>
-        </div>
-        <div class="card">
-          <h4>Financial Reporting</h4>
-          <p>
-            We prepare financial statements and reports in accordance with
-            international standards, giving stakeholders a clear picture of your
-            financial position and performance.
-          </p>
-        </div>
-        <div class="card">
-          <h4>Company Secretarial Services</h4>
-          <p>
-            Our team ensures your business remains compliant with corporate
-            governance requirements, handling company registration, annual
-            returns, board resolutions, and statutory filings.
-          </p>
-        </div>
-      </div>
-      <p
-        style="
-          display: flex;
-          padding: 20px;
-          margin: 20px;
-          background-color: rgba(255, 255, 255, 0.8);
-          border-radius: 20px;
-        "
-      >
-        At Alliance Financial Consultants, our goal is to be more than just your
-        accountants—we are your trusted financial partners. Let us handle the
-        numbers while you focus on what you do best: growing your business.
-      </p>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="section3">
-      <h2>Testimonials</h2>
-      <div class="testimonials">
-        <div class="card">
-          <p>
-            "Alliance Financial Consultants have been instrumental in
-            streamlining our financial operations. Their team’s professionalism,
-            clear communication, and tailored advice helped us manage cash flow
-            better and plan for growth. I now feel more confident in our
-            financial future, thanks to their consistent support and expertise."
-            <br />
-            <br />
-            <i><strong> — Mark , Company Director Nairobi</strong></i>
-          </p>
-        </div>
-        <div class="card">
-          <p>
-            "We were introduced to Alliance Financial Consultants at a pivotal
-            time in our business. Their guidance on tax strategy and risk
-            management allowed us to scale while staying compliant. They’ve
-            proven to be not just consultants, but trusted partners who truly
-            understand the needs of a growing company."
-            <br />
-            <br />
-            <i
-              ><strong
-                >— Edwin , Co-founder of a leading ICT company in
-                Nairobi</strong
-              >
-            </i>
-          </p>
-        </div>
-        <div class="card">
-          <p>
-            "Working with Alliance Financial Consultants has brought a new level
-            of organization and foresight to our financial planning. Their
-            professionalism, transparency, and responsiveness stand out. We’ve
-            seen measurable improvements in our financial health since engaging
-            their services."
-            <br />
-            <br />
-            <i
-              ><strong
-                >— Charles , CFO of a leading Telecommunications company
-                Nairobi</strong
-              ></i
-            >
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section id="why-choose-us" class="section3">
-      <h2>Why Choose Us</h2>
-      <p
-        style="
-          display: flex;
-          padding: 20px;
-          margin: 20px;
-          background-color: rgba(255, 255, 255, 0.8);
-          border-radius: 20px;
-        "
-      >
-        At Alliance Financial Consultants, we understand that navigating the
-        complexities of accounting and auditing requires expertise, precision,
-        and a deep commitment to your financial success. Here’s why our clients
-        trust us as their go-to accounting and audit firm:
-      </p>
-      <div class="choose">
-        <div class="card">
-          <h4>Expertise you can rely on</h4>
-          <p>
-            With years of experience in the accounting and audit industry, our
-            team of professionals brings a wealth of knowledge to each
-            engagement. We stay on top of the latest regulatory changes and
-            industry best practices to provide you with the most effective
-            solutions tailored to your unique needs.
-          </p>
-        </div>
-        <div class="card">
-          <h4>Tailored Solutions for Every Client</h4>
-          <p>
-            With years of experience in the accounting and audit industry, our
-            team of professionals brings a wealth of knowledge to each
-            engagement. We stay on top of the latest regulatory changes and
-            industry best practices to provide you with the most effective
-            solutions tailored to your unique needs.
-          </p>
-        </div>
-        <div class="card">
-          <h4>Comprehensive Services</h4>
-          <p>
-            From financial reporting and tax planning to audit services and
-            business consulting, we provide a full range of services designed to
-            help you optimize your financial performance. Whatever your needs,
-            we have the skills and resources to deliver.
-          </p>
-        </div>
-        <div class="card">
-          <h4>Integrity and Transparency</h4>
-          <p>
-            We believe in building lasting relationships based on trust. Our
-            commitment to integrity and transparency means that you can rely on
-            us to provide honest, accurate, and straightforward financial advice
-            without any hidden agendas.
-          </p>
-        </div>
-        <div class="card">
-          <h4>Proven Track Record</h4>
-          <p>
-            Our satisfied clients speak volumes about the quality of our work.
-            We have helped businesses across various industries achieve
-            financial clarity, optimize their processes, and remain compliant
-            with regulations. With us, you're in good hands
-          </p>
-        </div>
-
-        <div class="card">
-          <h4>Innovative Technology</h4>
-          <p>
-            We leverage the latest in accounting software and technology to
-            streamline processes, improve accuracy, and offer real-time
-            financial insights. Our innovative tools ensure that your business
-            is always on track and ahead of the curve.
-          </p>
-        </div>
-        <div class="card">
-          <h4>Client-centric Approach</h4>
-          <p>
-            Your success is our priority. At Alliance Financial Consultants, we
-            take a client-centric approach, providing personalized attention and
-            ongoing support to ensure your financial goals are met efficiently
-            and effectively.
-          </p>
-        </div>
-        <div class="card">
-          <h4>Affordable, Value-Drive Services</h4>
-          <p>
-            We believe in offering top-quality services at competitive prices.
-            With us, you get exceptional value without compromising on quality.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>kihara.mwangi@outlook.com</p>
-      <p>+254 713 735 259</p>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-      <p>&copy; 2025 Alliance Financial Consultants. All rights reserved.</p>
-    </footer>
   </body>
 </html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .navbar {
+        display: flex;
+        background-color: #d10202;
+        height: 60px;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+      .home-link {
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-right: auto;
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.5rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+      .home-link:hover {
+        background-color: black;
+        color: white;
+      }
+      .container {
+        display: flex;
+        height: 100%;
+        align-items: center;
+      }
+      .links {
+        color: black;
+        display: flex;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 1.2rem;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 100%;
+        align-items: center;
+      }
+      .links:hover {
+        background-color: #000000;
+        color: white;
+      }
+
+      .section1 {
+        display: grid;
+        max-width: 1000px;
+        margin: auto auto;
+
+        grid-template-columns: repeat(auto-fit, 300px);
+
+        justify-content: center;
+        gap: 30px;
+        padding: 30px;
+      }
+      .service {
+        padding: 30px;
+        color: white;
+        background-color: rgb(83, 83, 83);
+      }
+      .service:hover {
+        background-color: red;
+        color: white;
+      }
+      h1 {
+        justify-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="home-link">Home</a>
+      <div class="container">
+        <a href="index.html" class="links">About Us</a>
+        <a href="testimonials.html" class="links">Testimonials</a>
+        <a href="why-choose-us.html" class="links">Why Choose Us</a>
+      </div>
+    </nav>
+    <h1>Our Services</h1>
+    <section class="section1">
+      <div class="service">
+        <p>
+          1. Taxation Services We provide end-to-end tax compliance and advisory
+          services, helping you navigate complex tax regulations, optimize your
+          tax position, and meet all statutory obligations. Our services include
+          tax planning, filing, audits, and representation.
+        </p>
+      </div>
+      <div class="service">
+        <p>
+          2. Business Advisory Our advisory team works closely with clients to
+          provide strategic guidance on financial planning, business
+          structuring, growth strategies, and risk management. We help you make
+          informed decisions that drive profitability and long-term success.
+        </p>
+      </div>
+      <div class="service">
+        <p>
+          3. Audit & Assurance We offer independent and objective audit services
+          that enhance the credibility of your financial statements. Our audits
+          are designed to meet regulatory standards while providing insights to
+          improve internal controls and business processes.
+        </p>
+      </div>
+      <div class="service">
+        <p>
+          4. Bookkeeping & Accounting Accurate financial records are the
+          backbone of any successful business. We offer comprehensive
+          bookkeeping and accounting services that ensure your records are
+          up-to-date, compliant, and ready for informed decision-making.
+        </p>
+      </div>
+      <div class="service">
+        5. Payroll Services We manage the complexities of payroll processing,
+        ensuring accurate salary computations, statutory deductions, and timely
+        remittances, so you can focus on growing your business.
+      </div>
+    </section>
+  </body>
+</html>
