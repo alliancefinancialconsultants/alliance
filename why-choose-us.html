@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Why Choose Us</title>
+    <link rel="stylesheet" href="styles.css" />
     <style>
       body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background-color: #f4f4f4;
+        background-image: url(accounting-images/white-back.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
       }
       .navbar {
         display: flex;
@@ -19,6 +23,7 @@
         justify-content: flex-end;
         padding-right: 20px;
         padding-left: 20px;
+        box-shadow: 0px 3px 5px rgb(133, 35, 35);
       }
       .home-link {
         margin-right: auto;
@@ -36,15 +41,17 @@
         align-items: center;
       }
       .links {
-        color: black;
+          color: black;
         display: flex;
         text-decoration: none;
         margin-left: 20px;
         font-size: 1.2rem;
-        padding-right: 20px;
         padding-left: 20px;
+        padding-right: 20px;
         height: 100%;
         align-items: center;
+        font-weight: bold;
+        transition: background-color 0.3s ease, color 0.3s ease;
       }
       .links:hover {
         background-color: #000000;
@@ -56,22 +63,83 @@
       }
       .choice-container {
         width: 100%;
+        color: black;
         max-width: 1000px;
         margin: auto auto;
         padding: 30px;
-        box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.5);
-        background-color: rgb(83, 83, 83);
-        transition: background-color 0.3s ease, color 0.3s ease;
+
+
+        
         border-radius: 5px;
       }
-      .choice-container:hover {
-        background-color: #851414;
-        color: white;
-      }
+
 
       p {
         font-size: 1.2rem;
         line-height: 1.6;
+      }
+      h1 {
+        justify-self: center;
+        display: flex;
+        color: rgb(255, 0, 0);
+      }
+      .intro {
+        color: black;
+        justify-self: center;
+        display: flex;
+        max-width: 900px;
+        padding: 20px;
+      }
+      input {
+        display: none;
+
+      }
+      .menu-icon, .close-icon {
+        display: none;
+      }
+                  @media (max-width: 990px) {
+        .container {
+          flex-direction: column;
+          width: 300px;
+          position: fixed;
+          top: 0;
+          right: -100%;
+          z-index: 10;
+          background-color: #d10202;
+
+          height: 100vh;
+          transition: 0.5s;
+        }
+        .links {
+
+          width: 100%;
+          margin-left: 0;
+          padding-left: 0;
+          height: 50px;
+          text-indent: 20px;
+          padding-right: 0px;
+          padding-top: 10px;
+        }
+        .menu-icon,
+        .close-icon {
+          display: block;
+        }
+        .close-icon {
+          align-self: flex-start;
+          padding-left: 20px;
+          padding-top: 20px;
+        }
+        #menu-toggle:checked ~ .container {
+          right: 0;
+        }
+        #menu-toggle:checked ~ #overlay {
+          position: fixed;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: 9;
+        }
       }
     </style>
   </head>
@@ -81,7 +149,35 @@
         <a href="index.html" class="home-link"
           ><img src="alliance2.JPG" class="logo" />
         </a>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="30px"
+            viewBox="0 -960 960 960"
+            width="30px"
+            fill="#1f1f1f"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </label>
+        <label for="menu-toggle" id="overlay"></label>
         <div class="container">
+          <label for="menu-toggle" class="close-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="30px"
+              viewBox="0 -960 960 960"
+              width="30px"
+              fill="#1f1f1f"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </label>
           <a href="index.html" class="links">About Us</a>
           <a href="testimonials.html" class="links">Testimonials</a>
           <a href="services.html" class="links">Our Services</a>
@@ -90,7 +186,7 @@
       </nav>
     </nav>
     <h1>Why Choose Us</h1>
-    <p>
+    <p class="intro">
       At Alliance Financial Consultants, we understand that navigating the
       complexities of accounting and auditing requires expertise, precision, and
       a deep commitment to your financial success. Here’s why our clients trust
